@@ -222,7 +222,6 @@ class _HomeState extends State<Home> {
             ),
             Container(
               height: 150,
-
               child: ListView.builder(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
@@ -233,6 +232,47 @@ class _HomeState extends State<Home> {
                     image: categories[index].image ?? "",
                   );
                 },
+              ),
+            ),
+            Text(
+              "Trending News",
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 22,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              margin: EdgeInsets.only(right: 20.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                ),
+              ),
+
+              child: Row(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      bottomLeft: Radius.circular(10),
+                    ),
+                    child: Image.asset(
+                      "images/news1.jpg",
+                      height: 120,
+                      width: 120,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Column(
+                    children: [
+
+                    ],
+                  ),
+                ],
               ),
             ),
           ],
@@ -255,20 +295,31 @@ class CategoryTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(60),
             child: Image.asset(
               image,
-              height: 100,
-              width: 100,
+              height: 110,
+              width: 110,
               fit: BoxFit.cover,
             ),
           ),
           Container(
-            height: 100,
-            width: 100,
-            child: Text(
-              categoryname,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-                fontWeight: FontWeight.w500,
+            height: 110,
+            width: 110,
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(34, 0, 0, 0),
+              borderRadius: BorderRadius.circular(60),
+            ),
+          ),
+          Container(
+            height: 110,
+            width: 110,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(60)),
+            child: Center(
+              child: Text(
+                categoryname,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
