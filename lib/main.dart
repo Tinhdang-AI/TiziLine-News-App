@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/pages/category_news.dart';
 import 'package:news_app/pages/home.dart';
 import 'package:news_app/pages/onboarding.dart';
 
