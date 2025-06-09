@@ -61,6 +61,7 @@ class News {
             urlToImage: e['urlToImage'],
             desc: e['description'],
             title: e['title'],
+            url: e['url'],
           ))
       .toList();
   }

@@ -27,6 +27,7 @@ class ShowCategoryNews {
               title: e['title'],
               desc: e['description'],
               urlToImage: e['urlToImage'],
+              url: e['url'],
             ))
         .toList();
   }
