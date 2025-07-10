@@ -42,7 +42,7 @@ TiziLine News is a sleek, user-friendly mobile news application that delivers tr
 - **Ngôn ngữ**: Dart
 - **UI Components**: Material Design
 
-📲 **Installation instructions**
+🧩 **Application Architecture**
 
 ```
 lib/
