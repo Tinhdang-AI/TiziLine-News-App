@@ -15,14 +15,14 @@ TiziLine News is a sleek, user-friendly mobile news application that delivers tr
 
 📲 **Installation instructions**
 
- - Đảm bảo bạn đã cài đặt Flutter SDK
+ - Make sure you have installed Flutter SDK
    - Clone repository:  
     git clone https://github.com/Tinhdang-AI/TiziLine-News-App.git
-   - Di chuyển vào thư mục dự án:  
+   - Move to project folder:  
     cd news_app
-   - Cài đặt các dependencies:  
+   - Install dependencies:  
     flutter pub get
-   - Chạy ứng dụng:  
+   - Run app:  
     flutter run
 
 
@@ -37,8 +37,32 @@ TiziLine News is a sleek, user-friendly mobile news application that delivers tr
   <img src="https://github.com/user-attachments/assets/246adaf3-c9d8-4077-81ca-df28d3f999a7" alt="Technology" width="30%"/>
 </p>
 
-🛠️ **Công nghệ sử dụng**
+🛠️ **Technology**
 - **Framework**: Flutter
 - **Ngôn ngữ**: Dart
 - **UI Components**: Material Design
+
+📲 **Installation instructions**
+
+```
+lib/
+├── models/                         # Mô hình dữ liệu (Data Models)
+│   ├── article_model.dart              # Model cho bài viết
+│   ├── category_model.dart             # Model cho danh mục
+│   └── show_category.dart              # Model phụ cho hiển thị danh mục
+│
+├── pages/                          # Giao diện người dùng (UI Screens)
+│   ├── article_view.dart               # Trang hiển thị bài viết
+│   ├── category_news.dart              # Trang danh sách tin theo danh mục
+│   ├── home.dart                       # Màn hình chính
+│   └── onboarding.dart                 # Màn hình giới thiệu khi mở app lần đầu
+│
+├── services/                       # Xử lý dữ liệu, API, logic dịch vụ
+│   ├── data.dart                       # Xử lý dữ liệu nội bộ (tĩnh hoặc giả lập)
+│   ├── news.dart                       # Dịch vụ gọi tin tức
+│   └── show_category_news.dart         # Dịch vụ lấy tin theo danh mục hiển thị
+│
+└── main.dart                      # Điểm khởi đầu ứng dụng Flutter
+
+```
 
